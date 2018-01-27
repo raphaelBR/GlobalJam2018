@@ -74,11 +74,11 @@ extinction = extinction - 1
 }
 
 if extinction <= 0 {
-	mouse_right = false
+	recuperation = true
 }
 
-if extinction >= 30 && mouse_right = false {
-	recuperation = 
+if extinction >= 30 {
+	recuperation = false
 }
 
 
