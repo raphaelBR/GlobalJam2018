@@ -1,3 +1,6 @@
+//variable du feu à déposer
+drop_fire = false;
+
 r = irandom_range(0, 6)
 switch (r) {
     case 0:
