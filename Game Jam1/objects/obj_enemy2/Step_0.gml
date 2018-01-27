@@ -1,24 +1,18 @@
-var l3E76AB5B_0 = false;
-l3E76AB5B_0 = instance_exists(obj_player);
-if(l3E76AB5B_0)
-{
+if (distance_to_object(obj_player) > closeDistance) {
 	direction = point_direction(x, y, obj_player.x, obj_player.y);
-
-	speed = spd;
-}
-
-image_angle = direction;
-
-if(hp <= 0)
-{
-	with(obj_score) {
-	thescore += 5;
-	
+	speed = speedAttack;
+} else if (distance_to_object(obj_player) > securityDistance) {
+	direction = point_direction(x, y, obj_player.x, obj_player.y);
+	speed = 0;
+	if (can_shoot == true) {
+		inst = instance_create_layer(x, y, "Bullets", obj_bulletEnemy)
+		inst.direction = direction
+		inst.image_angle = direction
+		can_shoot = false
+		alarm_set(0, cooldown * room_speed)
 	}
-
-	audio_sound_pitch(snd_death, random_range(0.8,1.2));
-
-	audio_play_sound(snd_death, 0, 0);
-
-	instance_destroy();
+} else {
+	direction = point_direction(obj_player.x, obj_player.y, x, y);
+	speed = speedFlee;
 }
+image_angle = direction

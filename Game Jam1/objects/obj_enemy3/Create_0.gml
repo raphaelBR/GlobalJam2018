@@ -1,3 +1,3 @@
-hp = 5;
-
-spd = 1.5;
+speedWalk = 5
+protectionDistance = 100
+inst = instance_create_layer(x, y, "Instances", obj_shield)
