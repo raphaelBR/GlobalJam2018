@@ -1,8 +1,8 @@
-//effect of slow
-if rebounce = true {
-speed = speed -0.1	
-}
-
-if speed <= 0  {
-	rebounce = false
+if (speed > 0) {
+	speed = clamp(speed - speedLoss / room_speed, 0, speedMax)
+	if (speed > speedCap) {
+		image_blend = c_orange
+	} else {
+		image_blend = c_white	
+	}
 }

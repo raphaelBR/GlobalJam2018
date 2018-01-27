@@ -68,7 +68,9 @@ if (spacebar == true && can_extinct == true) {
 			can_shoot = false;
 			alarm_set(1, grenade_cd * room_speed)
 		} else if (mouse_right == true) {
-			// Boomerang
+			instance_create_layer(x, y, "Bullets", obj_boomerangToxin);
+			can_shoot = false;
+			alarm_set(1, boomerang_cd * room_speed)
 		}
 	}
 }

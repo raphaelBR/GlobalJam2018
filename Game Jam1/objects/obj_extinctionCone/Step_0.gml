@@ -1,7 +1,7 @@
 x = obj_player.x
 y = obj_player.y
 
-direction = point_direction(x, y, mouse_x, mouse_y);
+direction = obj_playerHead.direction
 image_angle = direction;
 
 if (active == true) {

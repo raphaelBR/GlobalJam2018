@@ -9,6 +9,7 @@ can_move_ghost = true;
 //cooldown du tir
 can_shoot = true;
 grenade_cd = 0.3
+boomerang_cd = 0.3
 
 //Nombre de point de vie
 life = 5
