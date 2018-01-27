@@ -16,7 +16,12 @@
         "60dd37ef-0d0c-4094-a1b9-f71ae17a1359"
 =======
         "8fa1c23e-e599-4dd2-b702-c9e1e1629440",
+<<<<<<< HEAD
         "7f35e174-009c-40a4-b861-ed56f1dc0fc6"
+>>>>>>> master
+=======
+        "7f35e174-009c-40a4-b861-ed56f1dc0fc6",
+        "bed8a3ab-bf05-4750-8f96-5d2599c2c5c0"
 >>>>>>> master
     ],
     "filterType": "GMSprite",

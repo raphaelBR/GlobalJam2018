@@ -1,7 +1,13 @@
 ///@description PLAYER CHECKS
 
+//Life
+if life <=0 {
+room_restart()	
+}
+
 //variables
 mouse_left = mouse_check_button(mb_left);
+mouse_right = mouse_check_button(mb_right);
 //pour le mouvement
 move_up = keyboard_check(ord("W"));
 move_down = keyboard_check(ord("S"));
@@ -56,6 +62,18 @@ if (mouse_left) {
 		cooldown = 5;
 	}
 }
+
+
+//Coup de melee
+if (mouse_right) {
+o_cone.damage = true
+}
+
+if !(mouse_right) {
+o_cone.damage = false
+}
+
+
 
 //diminue le cooldown
 cooldown--;

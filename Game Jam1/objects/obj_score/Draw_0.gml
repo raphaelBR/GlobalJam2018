@@ -15,3 +15,4 @@ draw_set_colour($FFFFFFFF & $ffffff);
 draw_set_alpha(($FFFFFFFF >> 24) / $ff);
 
 draw_text(cx + (cw/2), cy + 32, string("Score: ") + string(thescore));
+draw_text(cx + 925, cy + 32, string("Life: ") + string(obj_player.life));

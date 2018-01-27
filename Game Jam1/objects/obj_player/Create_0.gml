@@ -9,4 +9,9 @@ can_move_ghost = true;
 //cooldown du tir
 cooldown = 0;
 
+<<<<<<< HEAD
 instance_create_layer(x, y, "Layer_Player", obj_playerHead);
+=======
+//Nombre de point de vie
+life = 5
+>>>>>>> master
