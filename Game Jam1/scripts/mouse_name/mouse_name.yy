@@ -1,5 +1,5 @@
 {
-    "id": "76bcc1f6-5969-4c10-bff4-756fd15129b1",
+    "id": "057122cb-efbc-478f-a769-c0586307a18a",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "mouse_name",

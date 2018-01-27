@@ -1,5 +1,5 @@
 {
-    "id": "38c94db2-1b2e-4c7d-a9f5-528e06a5e68f",
+    "id": "d2941d48-be4d-4abe-b433-8c62040ff390",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "object_get_depth",
