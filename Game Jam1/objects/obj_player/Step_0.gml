@@ -73,36 +73,10 @@ if (spacebar == true && can_extinct == true) {
 	}
 }
 
-//Coup de melee (extinction)
-
-if (mouse_right) && recuperation = false{
-obj_extinctionCone.damage = true
-extinction = extinction - 1
+if (obj_playerHead.image_blend == c_red) {
+	obj_playerHead.image_blend = c_white
 }
 
-
-if !(mouse_right) && extinction < 100 {
-	obj_extinctionCone.damage = false
-	extinction = extinction + 1
+if (can_extinct == false && extinction >= extinctionCap) {
+	can_extinct = true
 }
-
-
-if extinction >= 30 && recuperation = true {
-	recuperation = false
-	refill = false
-}
-
-
-if extinction <= 0 {
-	recuperation = true
-	obj_extinctionCone.damage = false
-	refill = true
-}
-
-if (mouse_right) && refill = true {
-obj_extinctionCone.damage = false
-extinction = extinction + 1	
-}
-
-//diminue le cooldown
-cooldown--;

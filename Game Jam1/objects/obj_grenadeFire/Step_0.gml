@@ -1,3 +1,4 @@
+/*
 //effect of slow
 if explosion = false {
 image_speed = 0
@@ -21,7 +22,6 @@ if explosion = true {
 		instance_destroy(obj_enemy)
 	}
 }
-*/
 
 //traine de feu
 if fire = true {
@@ -30,3 +30,5 @@ if fire = true {
 	}
 	fire = false
 }
+
+*/
