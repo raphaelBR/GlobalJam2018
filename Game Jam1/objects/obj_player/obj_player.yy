@@ -5,50 +5,10 @@
     "name": "obj_player",
     "eventList": [
         {
-            "id": "a5c86b51-337a-4c31-a544-caa5f5250464",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": true,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 37,
-            "eventtype": 5,
-            "m_owner": "df138ae7-e038-4982-86df-200ab193aa6a"
-        },
-        {
-            "id": "2092e725-2fdc-4d28-b60b-954421a7417d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": true,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 39,
-            "eventtype": 5,
-            "m_owner": "df138ae7-e038-4982-86df-200ab193aa6a"
-        },
-        {
-            "id": "9f0a042a-5f4a-4987-a275-5241e9ea2cbd",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": true,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 38,
-            "eventtype": 5,
-            "m_owner": "df138ae7-e038-4982-86df-200ab193aa6a"
-        },
-        {
-            "id": "1a0b0946-404a-452a-9a15-14abf6a61f87",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": true,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 40,
-            "eventtype": 5,
-            "m_owner": "df138ae7-e038-4982-86df-200ab193aa6a"
-        },
-        {
             "id": "1ae40d48-0142-46fb-b815-25d1f0b54871",
             "modelName": "GMEvent",
             "mvc": "1.0",
-            "IsDnD": true,
+            "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
@@ -58,7 +18,7 @@
             "id": "dc987ba2-9497-4878-8a3f-3fabd925ea45",
             "modelName": "GMEvent",
             "mvc": "1.0",
-            "IsDnD": true,
+            "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,

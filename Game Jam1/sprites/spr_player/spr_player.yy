@@ -1,7 +1,7 @@
 {
     "id": "41e3a77e-b520-4928-b7ec-8e3f2f1168f9",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.12",
     "name": "spr_player",
     "For3D": false,
     "HTile": false,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 115,
+    "height": 114,
     "layers": [
         {
             "id": "a52e504f-6861-4419-89cb-01b6be9299bc",

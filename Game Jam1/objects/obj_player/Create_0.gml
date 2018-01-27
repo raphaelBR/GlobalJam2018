@@ -1,9 +1,14 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 3543FBE2
-/// @DnDArgument : "var" "cooldown"
+///@description INIT VAR
 
-{
-	cooldown = 0;
-}
+//vitesse de base de mouvement du joueur
+spd = 5;
 
+//variables pour bouger
+can_move_up = true;
+can_move_down = true;
+can_move_left = true;
+can_move_right = true;
+can_move_ghost = true;
+
+//cooldown du tir
+cooldown = 0;

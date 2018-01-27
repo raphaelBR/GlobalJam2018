@@ -1,86 +1,93 @@
-/// @DnDAction : YoYo Games.Movement.Set_Direction_Point
-/// @DnDVersion : 1
-/// @DnDHash : 045680BB
-/// @DnDArgument : "x" "mouse_x"
-/// @DnDArgument : "y" "mouse_y"
+///@description PLAYER CHECKS
 
-{
-	direction = point_direction(x, y, mouse_x, mouse_y);
+//variables
+mouse_left = mouse_check_button(mb_left);
+//pour le mouvement
+move_up = keyboard_check(ord("W"));
+move_down = keyboard_check(ord("S"));
+move_left = keyboard_check(ord("A"));
+move_right = keyboard_check(ord("D"));
+
+///// MOUVEMENT /////////////////////////////////////
+
+//déplacement du joueur
+if move_up && can_move_up{
+	y -= spd;
 }
 
-
-/// @DnDAction : YoYo Games.Instances.Sprite_Rotate
-/// @DnDVersion : 1
-/// @DnDHash : 4A913DBD
-/// @DnDArgument : "angle" "direction"
-
-{
-	image_angle = direction;
+if move_down && can_move_down{
+	y += spd;
 }
 
-/// @DnDAction : YoYo Games.Mouse & Keyboard.If_Mouse_Down
-/// @DnDVersion : 1.1
-/// @DnDHash : 73775242
-var l73775242_0;
-l73775242_0 = mouse_check_button(mb_left);
-if (l73775242_0)
-{
-	
-
-    /// @DnDAction : YoYo Games.Common.If_Variable
-    /// @DnDVersion : 1
-    /// @DnDHash : 562F215D
-    /// @DnDParent : 73775242
-    /// @DnDArgument : "var" "cooldown"
-    /// @DnDArgument : "op" "3"
-    
-    var l562F215D_0 = (cooldown <= 0);
-    if (l562F215D_0)
-    {
-    	
-    
-            /// @DnDAction : YoYo Games.Instances.Create_Instance
-            /// @DnDVersion : 1
-            /// @DnDHash : 3D6A138C
-            /// @DnDParent : 562F215D
-            /// @DnDArgument : "xpos_relative" "1"
-            /// @DnDArgument : "ypos_relative" "1"
-            /// @DnDArgument : "objectid" "obj_bullet"
-            /// @DnDArgument : "layer" ""Layer_Bullet""
-            /// @DnDSaveInfo : "objectid" "23a01800-eb9f-46eb-a32e-274663509637"
-            
-            {
-            	var l3D6A138C_0, l3D6A138C_1;
-            	l3D6A138C_0 = x + 0;
-            	l3D6A138C_1 = y + 0;
-            	instance_create_layer(l3D6A138C_0, l3D6A138C_1, "Layer_Bullet", obj_bullet); 
-            }
-    
-            /// @DnDAction : YoYo Games.Common.Variable
-            /// @DnDVersion : 1
-            /// @DnDHash : 6713E455
-            /// @DnDParent : 562F215D
-            /// @DnDArgument : "expr" "5"
-            /// @DnDArgument : "var" "cooldown"
-            
-            {
-            	cooldown = 5;
-            }
-    
-    
-    }
-
-
+if move_left && can_move_left{
+	x -= spd;
 }
 
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 32BAE4A5
-/// @DnDArgument : "expr" "-1"
-/// @DnDArgument : "expr_relative" "1"
-/// @DnDArgument : "var" "cooldown"
-
-{
-	cooldown += -1;
+if move_right && can_move_right{
+	x += spd;
 }
 
+//Empêche le joueur de sortir de l'écran
+//57 = moitié du sprite player, on test l'origine
+//test gauche
+if x <= 57 {
+	can_move_left = false;
+} else {
+	can_move_left = true;
+}
+
+//test droit
+if x >= room_width-57 {
+	can_move_right = false;
+} else {
+	can_move_right = true;
+}
+
+//test haut
+if y <= 57 {
+	can_move_up = false;
+} else {
+	can_move_up = true;
+}
+
+//test bas
+if y >= room_height-57 {
+	can_move_down = false;
+} else {
+	can_move_down = true;
+}
+
+//collision avec le mur
+//test haut
+if collision_line(x-56,y-56,x+56,y-56,obj_wall,0,true){
+	can_move_up = false
+}
+//test bas
+if collision_line(x-56,y+56,x+56,y+56,obj_wall,0,true){
+	can_move_down = false
+}
+//test gauche
+if collision_line(x-56,y-56,x-56,y+56,obj_wall,0,true){
+	can_move_left = false
+}
+//test droite
+if collision_line(x+56,y-56,x+56,y+56,obj_wall,0,true){
+	can_move_left = false
+}
+
+///// TIR //////////////////////////////////////////////////////
+
+direction = point_direction(x, y, mouse_x, mouse_y);
+
+image_angle = direction;
+
+//tir avec le clic gauche
+if (mouse_left) {
+	if(cooldown <= 0) {
+		instance_create_layer(x + 0, y + 0, "Layer_Bullet", obj_bullet);
+		cooldown = 5;
+	}
+}
+
+//diminue le cooldown
+cooldown--;
