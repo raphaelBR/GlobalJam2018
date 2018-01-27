@@ -8,6 +8,7 @@ room_restart()
 //variables
 mouse_left = mouse_check_button(mb_left);
 mouse_right = mouse_check_button(mb_right);
+mouse_right_released = mouse_check_button_released(mb_right);
 //pour le mouvement
 move_up = keyboard_check(ord("W"));
 move_down = keyboard_check(ord("S"));
@@ -66,26 +67,19 @@ if (mouse_left) {
 
 
 //Coup de melee (extinction)
-if extinction <= 0 {
-	recuperation = true
-	alarm_set(1,60)
-}
 
-if extinction >= 30 {
-	recuperation = false	
-}
-if (mouse_right) && extinction > 0 && recuperation = false{
+if (mouse_right) && recuperation = false {
 obj_extinctionCone.damage = true
-extinction = extinction - 0.5
+extinction = extinction - 1
 }
 
-if !(mouse_right) {
-obj_extinctionCone.damage = false
-	if extinction < 100 {
-	extinction = extinction + 0.5
-	}
+if extinction <= 0 {
+	mouse_right = false
 }
 
+if extinction >= 30 && mouse_right = false {
+	recuperation = 
+}
 
 
 //diminue le cooldown
