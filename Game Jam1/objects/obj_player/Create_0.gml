@@ -1,9 +1,4 @@
-/// @DnDAction : YoYo Games.Common.Variable
-/// @DnDVersion : 1
-/// @DnDHash : 3543FBE2
-/// @DnDArgument : "var" "cooldown"
+///@description INIT VAR
 
-{
-	cooldown = 0;
-}
-
+//cooldown du tir
+cooldown = 0;
