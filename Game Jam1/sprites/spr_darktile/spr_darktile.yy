@@ -1,7 +1,7 @@
 {
     "id": "d3538cf7-3420-4c21-94c1-56cd653c84e8",
     "modelName": "GMSprite",
-    "mvc": "1.12",
+    "mvc": "1.1",
     "name": "spr_darktile",
     "For3D": false,
     "HTile": false,

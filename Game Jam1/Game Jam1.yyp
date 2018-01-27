@@ -191,7 +191,6 @@
             }
         },
         {
-<<<<<<< HEAD
             "Key": "9ce41be4-1693-49f5-bb39-61b62b2942e1",
             "Value": {
                 "id": "6bd13cb6-3af5-4cc0-b26d-b108576295ad",
@@ -205,6 +204,14 @@
                 "id": "cecd5f80-598b-443f-b56f-2e9e8ad4a77b",
                 "resourcePath": "views\\9e6ccc9f-affe-41b0-a944-c32875927fc4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9f0c4498-72fe-479c-873d-4fefa9c389a0",
+            "Value": {
+                "id": "f8043a94-5a80-43c4-aba0-f4baff18381e",
+                "resourcePath": "objects\\o_player\\o_player.yy",
+                "resourceType": "GMObject"
             }
         },
         {
