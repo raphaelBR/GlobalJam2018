@@ -1,0 +1,208 @@
+Converting GML script: ${project_dir}\scripts\create_debugR\create_debugR.gml
+Converted description /// @description  create_debugR(*PLACE IN THE ENGINE’S [CREATE] EVENT*)/// @function  create_debugR
+/// @param *PLACE IN THE ENGINE’S [CREATE] EVENT*
+
+Converting GML script: ${project_dir}\scripts\draw_debugR\draw_debugR.gml
+Converted builtin - line 34: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 36: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 37: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 38: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 39: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 40: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 41: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 42: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 43: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 44: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 46: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 47: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 48: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 49: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 50: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 51: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 52: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 53: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 54: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 55: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 56: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 57: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 67: view_xview -> __view_get( e__VW.XView, 0 )
+Converted builtin - line 34: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 36: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 37: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 38: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 39: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 40: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 41: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 42: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 43: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 44: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 46: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 47: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 48: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 49: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 50: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 51: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 52: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 53: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 54: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 55: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 56: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 57: view_yview -> __view_get( e__VW.YView, 0 )
+Converted builtin - line 67: view_yview -> __view_get( e__VW.YView, 0 )
+Converted description /// @description  draw_debugR(*PLACE IN THE ENGINE’S [DRAW GUI END] EVENT*)/// @function  draw_debugR
+/// @param *PLACE IN THE ENGINE’S [DRAW GUI END] EVENT*
+
+Converting GML script: ${project_dir}\scripts\step_debugR\step_debugR.gml
+Converted builtin - line 64: background_visible[global.background_tracked] -> __background_get( e__BG.Visible, global.background_tracked )
+Converted builtin - line 70: background_foreground[global.background_tracked] -> __background_get( e__BG.Foreground, global.background_tracked )
+Converted builtin - line 65: background_index[global.background_tracked] -> __background_get( e__BG.Index, global.background_tracked )
+Converted builtin - line 75: background_x[global.background_tracked] -> __background_get( e__BG.X, global.background_tracked )
+Converted builtin - line 76: background_y[global.background_tracked] -> __background_get( e__BG.Y, global.background_tracked )
+Converted builtin - line 72: background_width[global.background_tracked] -> __background_get( e__BG.Width, global.background_tracked )
+Converted builtin - line 71: background_height[global.background_tracked] -> __background_get( e__BG.Height, global.background_tracked )
+Converted builtin - line 73: background_htiled[global.background_tracked] -> __background_get( e__BG.HTiled, global.background_tracked )
+Converted builtin - line 74: background_vtiled[global.background_tracked] -> __background_get( e__BG.VTiled, global.background_tracked )
+Converted builtin - line 77: background_xscale[global.background_tracked] -> __background_get( e__BG.XScale, global.background_tracked )
+Converted builtin - line 78: background_yscale[global.background_tracked] -> __background_get( e__BG.YScale, global.background_tracked )
+Converted builtin - line 79: background_hspeed[global.background_tracked] -> __background_get( e__BG.HSpeed, global.background_tracked )
+Converted builtin - line 80: background_vspeed[global.background_tracked] -> __background_get( e__BG.VSpeed, global.background_tracked )
+Converted builtin - line 68: background_blend[global.background_tracked] -> __background_get( e__BG.Blend, global.background_tracked )
+Converted builtin - line 67: background_alpha[global.background_tracked] -> __background_get( e__BG.Alpha, global.background_tracked )
+Converted builtin - line 69: background_color[global.background_tracked] -> __background_get_colour( )
+Converted builtin - line 66: background_showcolor[global.background_tracked] -> __background_get_showcolour( )
+Converted builtin - line 85: view_xview[global.view_tracked] -> __view_get( e__VW.XView, global.view_tracked )
+Converted builtin - line 86: view_yview[global.view_tracked] -> __view_get( e__VW.YView, global.view_tracked )
+Converted builtin - line 87: view_wview[global.view_tracked] -> __view_get( e__VW.WView, global.view_tracked )
+Converted builtin - line 88: view_hview[global.view_tracked] -> __view_get( e__VW.HView, global.view_tracked )
+Converted builtin - line 98: view_angle[global.view_tracked] -> __view_get( e__VW.Angle, global.view_tracked )
+Converted builtin - line 94: view_hborder[global.view_tracked] -> __view_get( e__VW.HBorder, global.view_tracked )
+Converted builtin - line 95: view_vborder[global.view_tracked] -> __view_get( e__VW.VBorder, global.view_tracked )
+Converted builtin - line 96: view_hspeed[global.view_tracked] -> __view_get( e__VW.HSpeed, global.view_tracked )
+Converted builtin - line 97: view_vspeed[global.view_tracked] -> __view_get( e__VW.VSpeed, global.view_tracked )
+Converted builtin - line 93: view_object[global.view_tracked] -> __view_get( e__VW.Object, global.view_tracked )
+Converted builtin - line 84: view_visible[global.view_tracked] -> __view_get( e__VW.Visible, global.view_tracked )
+Converted builtin - line 90: view_yport[global.view_tracked] -> __view_get( e__VW.YPort, global.view_tracked )
+Converted builtin - line 89: view_wport[global.view_tracked] -> __view_get( e__VW.WPort, global.view_tracked )
+Converted builtin - line 91: view_wport[global.view_tracked] -> __view_get( e__VW.WPort, global.view_tracked )
+Converted builtin - line 92: view_hport[global.view_tracked] -> __view_get( e__VW.HPort, global.view_tracked )
+Converted description /// @description  step_debugR(*PLACE IN THE ENGINE’S [STEP END] EVENT*)/// @function  step_debugR
+/// @param *PLACE IN THE ENGINE’S [STEP END] EVENT*
+Converted string - line 154: " FACE4 (Y or /\): " -> " FACE4 (Y or /\\): "
+
+Converting GML script: ${project_dir}\scripts\track_obj\track_obj.gml
+Converted builtin - line 13: instance_id -> instance_id_get( 0 )
+Converted description /// @description  track_obj(*PLACE IN THE OBJECT'S STEP EVENT*)/// @function  track_obj
+/// @param *PLACE IN THE OBJECT'S STEP EVENT*
+
+Converting GML script: ${project_dir}\scripts\track_var\track_var.gml
+Converted description /// @description  track_var(variable mark, variable link *PLACE IN AN OBJECT'S STEP EVENT*)/// @function  track_var
+/// @param variable mark
+/// @param  variable link *PLACE IN AN OBJECT'S STEP EVENT*
+
+Converting GML script: ${project_dir}\scripts\track_ds\track_ds.gml
+Converted description /// @description  track_ds(datastructure mark, datastructure index, datastructure type *PLACE IN AN OBJECT'S STEP EVENT*)/// @function  track_ds
+/// @param datastructure mark
+/// @param  datastructure index
+/// @param  datastructure type *PLACE IN AN OBJECT'S STEP EVENT*
+
+Converting GML script: ${project_dir}\scripts\debug_color\debug_color.gml
+Converted description /// @description  debug_color(color)/// @function  debug_color
+/// @param color
+
+Converting GML script: ${project_dir}\scripts\os_name\os_name.gml
+Converted description /// @description  os_name(os_type)/// @function  os_name
+/// @param os_type
+
+Converting GML script: ${project_dir}\scripts\iap_status_name\iap_status_name.gml
+Converted description /// @description  iap_status_name(iap_status)/// @function  iap_status_name
+/// @param iap_status
+
+Converting GML script: ${project_dir}\scripts\cursor_name\cursor_name.gml
+Converted description /// @description  cursor_name(cursor index)/// @function  cursor_name
+/// @param cursor index
+Converted string - line 49: "RESIZE DIAGONAL \" -> "RESIZE DIAGONAL \\"
+
+Converting GML script: ${project_dir}\scripts\os_version_name\os_version_name.gml
+Converted description /// @description os_version_name(os version)/// @function os_version_name
+/// @param os version
+
+Converting GML script: ${project_dir}\scripts\time_value\time_value.gml
+Converted description /// @description  time_value(number of steps)/// @function  time_value
+/// @param number of steps
+
+Converting GML script: ${project_dir}\scripts\os_device_name\os_device_name.gml
+Converted description /// @description  device_name(os_device)/// @function  device_name
+/// @param os_device
+
+Converting GML script: ${project_dir}\scripts\data_get_type\data_get_type.gml
+Converted description /// @description  data_get_type(data)/// @function  data_get_type
+/// @param data
+
+Converting GML script: ${project_dir}\scripts\endaction_name\endaction_name.gml
+Converted description /// @description  endaction_name(endaction)/// @function  endaction_name
+/// @param endaction
+
+Converting GML script: ${project_dir}\scripts\ds_type_name\ds_type_name.gml
+Converted description /// @description  ds_type_name(datastructure index)/// @function  ds_type_name
+/// @param datastructure index
+
+Converting GML script: ${project_dir}\scripts\browser_name\browser_name.gml
+Converted description /// @description  browser_name(os_browser)/// @function  browser_name
+/// @param os_browser
+
+Converting GML script: ${project_dir}\scripts\background_name\background_name.gml
+Converted description /// @description  background_name(background_index)/// @function  background_name
+/// @param background_index
+
+Converting GML script: ${project_dir}\scripts\aa_name\aa_name.gml
+Converted description /// @description  aa_name(aa value)/// @function  aa_name
+/// @param aa value
+
+Converting GML script: ${project_dir}\scripts\object_name\object_name.gml
+Converted description /// @description  object_name(object index)/// @function  object_name
+/// @param object index
+
+Converting GML script: ${project_dir}\scripts\boolean_name\boolean_name.gml
+Converted description /// @description  boolean_name(binary value)/// @function  boolean_name
+/// @param binary value
+
+Converting GML script: ${project_dir}\scripts\sprite_name\sprite_name.gml
+Converted description /// @description  sprite_name(sprite_index)/// @function  sprite_name
+/// @param sprite_index
+
+Converting GML script: ${project_dir}\scripts\day_name\day_name.gml
+Converted description /// @description  day_name(weekday number)/// @function  day_name
+/// @param weekday number
+
+Converting GML script: ${project_dir}\scripts\month_name\month_name.gml
+Converted description /// @description  month_name(month number)/// @function  month_name
+/// @param month number
+
+Converting GML script: ${project_dir}\scripts\keyboard_name\keyboard_name.gml
+Converted description /// @description  keyboard_name(keyboard input)/// @function  keyboard_name
+/// @param keyboard input
+
+Converting GML script: ${project_dir}\scripts\mouse_name\mouse_name.gml
+Converted description /// @description  mouse_name(mouse_input)/// @function  mouse_name
+/// @param mouse_input
+
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit
+Windows NSIS Installer Script has been set to default due to changes in GameMaker Studio 2
+Game speed set to 60
+Added compatibility script 'background/background_get_name.gml'
+Added compatibility script 'background/__background_get.gml'
+Added compatibility script 'background/__background_get_colour.gml'
+Added compatibility script 'background/__background_get_colour_element.gml'
+Added compatibility script 'background/__background_get_element.gml'
+Added compatibility script 'background/__background_get_internal.gml'
+Added compatibility script 'background/__background_get_showcolour.gml'
+Added compatibility script 'background/__background_set_element.gml'
+Added compatibility script 'instance/instance_create.gml'
+Added compatibility script 'object/object_get_depth.gml'
+Added compatibility script 'tile/tile_get_count.gml'
+Added compatibility script 'tile/tile_get_ids.gml'
+Added compatibility script 'view/__view_get.gml'
+Added compatibility script 'background/__init_background.gml'
+Added compatibility script 'view/__init_view.gml'
+Added compatibility script '__init_global.gml'
+Added compatibility script '__global_object_depths.gml'
