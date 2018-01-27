@@ -1,1 +1,3 @@
-instance_create_layer (x, y, "Explosions", obj_explosionFire);
+///@description EXPLOSION FIRE
+
+instance_create_layer(x, y, "Explosions", obj_explosionFire);
