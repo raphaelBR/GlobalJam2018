@@ -1,5 +1,5 @@
 {
-    "id": "b12644a0-b77b-4e1f-8d1e-446c5cacd350",
+    "id": "3297c1d7-b3d3-4456-bd23-26d6daf9025a",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "instance_create",
