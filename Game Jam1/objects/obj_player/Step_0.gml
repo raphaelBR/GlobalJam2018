@@ -10,27 +10,10 @@ move_right = keyboard_check(ord("D"));
 
 ///// MOUVEMENT /////////////////////////////////////
 
-//déplacement du joueur
-if move_up && can_move_up{
-	y -= spd;
-}
-
-if move_down && can_move_down{
-	y += spd;
-}
-
-if move_left && can_move_left{
-	x -= spd;
-}
-
-if move_right && can_move_right{
-	x += spd;
-}
-
 //Empêche le joueur de sortir de l'écran
 //57 = moitié du sprite player, on test l'origine
 //test gauche
-if x <= 57 {
+if x <= (sprite_width/2) {
 	can_move_left = false;
 } else {
 	can_move_left = true;
@@ -59,21 +42,74 @@ if y >= room_height-57 {
 
 //collision avec le mur
 //test haut
-if collision_line(x-56,y-56,x+56,y-56,obj_wall,0,true){
-	can_move_up = false
+if collision_line(bbox_left,bbox_top+1,bbox_right,bbox_top+1,obj_wall,0,true){
+	can_move_up = false;
+} else {
+	can_move_up = true;
 }
 //test bas
-if collision_line(x-56,y+56,x+56,y+56,obj_wall,0,true){
-	can_move_down = false
+if collision_line(bbox_left,bbox_bottom-1,bbox_right,bbox_bottom-1,obj_wall,0,true){
+	can_move_down = false;
+} else {
+	can_move_down = true;
 }
 //test gauche
-if collision_line(x-56,y-56,x-56,y+56,obj_wall,0,true){
-	can_move_left = false
+if collision_line(bbox_left-1,bbox_top,bbox_left-1,bbox_bottom,obj_wall,0,true){
+	can_move_left = false;
+} else {
+	can_move_left = true;
 }
 //test droite
-if collision_line(x+56,y-56,x+56,y+56,obj_wall,0,true){
-	can_move_left = false
+if collision_line(x+(sprite_width/2),y-53,x+(sprite_width/2),y+53,obj_wall,0,true){
+	can_move_right = false;
+} else {
+	can_move_right = true;
 }
+
+for (var i = 0; i < spd; ++i) {
+    if move_up && can_move_up{
+		y--;
+	} else {
+		break;
+	}	
+}
+for (var i = 0; i < spd; ++i) {
+    if move_down && can_move_down{
+		y++;
+	} else {
+		break;
+	}	
+}
+for (var i = 0; i < spd; ++i) {
+    if move_left && can_move_left{
+		x--;
+	} else {
+		break;
+	}	
+}
+for (var i = 0; i < spd; ++i) {
+    if move_right && !collision_line(bbox_right+1,bbox_top-1,bbox_right+1,bbox_bottom+1,obj_wall,0,true){
+		x++;
+	} else {
+		break;
+	}	
+}
+//déplacement du joueur
+/*if move_up && can_move_up{
+	y -= spd;
+}
+
+if move_down && can_move_down{
+	y += spd;
+}
+
+if move_left && can_move_left{
+	x -= spd;
+}
+
+if move_right && can_move_right{
+	x += spd;
+}*/
 
 ///// TIR //////////////////////////////////////////////////////
 
