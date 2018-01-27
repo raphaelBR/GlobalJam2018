@@ -7,17 +7,20 @@ spd = 5;
 can_move_ghost = true;
 
 //cooldown du tir
-cooldown = 0;
+can_shoot = true;
+grenade_cd = 0.3
 
 //Nombre de point de vie
 life = 5
 
 //Invulnerable apres avoir recu un coup
-invulnerable = false
+vulnerable = true
+vulnerable_cd = 3
 
 //quandtite de extinctionCone
-extinction = 100
-
-//temps de recuperation apres avoir atteint le 0 avec extinction
-recuperation = false
+can_extinct = true
+extinction = 100.0
+extinctionCap = 30
+extinctionDrop = 50
+extinctionGain = 20
 

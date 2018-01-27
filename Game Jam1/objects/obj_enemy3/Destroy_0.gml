@@ -1,1 +1,1 @@
-instance_create_layer(x, y, "Layer_Enemy", obj_explosion);
+instance_create_layer(x, y, "Explosions", obj_explosionFire);

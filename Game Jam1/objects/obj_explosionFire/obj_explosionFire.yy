@@ -5,16 +5,6 @@
     "name": "obj_explosionFire",
     "eventList": [
         {
-            "id": "62abe7c6-1249-49eb-8e5a-3071944f2224",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "585e7ffb-7b99-4305-bd57-6ba5289547a9",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "a2ed88a6-4a47-4f05-bddd-a1ffb91669f7"
-        },
-        {
             "id": "28688d6e-494c-4373-bb1a-6dfaedff8669",
             "modelName": "GMEvent",
             "mvc": "1.0",

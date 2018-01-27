@@ -5,16 +5,6 @@
     "name": "obj_explosionToxin",
     "eventList": [
         {
-            "id": "52798376-6199-4f6a-a4db-e4713a718af9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "585e7ffb-7b99-4305-bd57-6ba5289547a9",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "56252f03-316a-4afa-8a98-2b57e7541647"
-        },
-        {
             "id": "4fa7fce9-a5e4-4b09-90e3-aa25806b0076",
             "modelName": "GMEvent",
             "mvc": "1.0",

@@ -1,14 +1,12 @@
 ///@description PLAYER CHECKS
 
-//Life
-if life <=0 {
-room_restart()	
-}
+
 
 //variables
 mouse_left = mouse_check_button(mb_left);
 mouse_right = mouse_check_button(mb_right);
 mouse_right_released = mouse_check_button_released(mb_right);
+spacebar = keyboard_check(vk_space);
 //pour le mouvement
 move_up = keyboard_check(ord("W"));
 move_down = keyboard_check(ord("S"));
@@ -55,32 +53,30 @@ if (move_right == true) {
 		}	
 	}
 }
-
-
-//tir avec le clic gauche
-if (mouse_left) {
-	if(cooldown <= 0) {
-		instance_create_layer(x + 0, y + 0, "Layer_Bullet", obj_grenade);
-		cooldown = 5;
+if (spacebar == true && can_extinct == true) {
+		obj_extinctionCone.active = true;
+		extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
+		if (extinction == 0) {
+			can_extinct = false;
+		}
+} else {
+	obj_extinctionCone.active = false;
+	extinction = clamp(extinction + extinctionGain / room_speed, 0, 100);
+	if (can_shoot == true) {
+		if (mouse_left == true) {
+			instance_create_layer(x, y, "Bullets", obj_grenadeFire);
+			can_shoot = false;
+			alarm_set(1, grenade_cd * room_speed)
+		} else if (mouse_right == true) {
+			// Boomerang
+		}
 	}
 }
 
-
-//Coup de melee (extinction)
-
-if (mouse_right) && recuperation = false {
-obj_extinctionCone.damage = true
-extinction = extinction - 1
+if (extinction >= extinctionCap && can_extinct == false) {
+	can_extinct = true
 }
 
-if extinction <= 0 {
-	recuperation = true
-}
-
-if extinction >= 30 {
-	recuperation = false
-}
-
-
-//diminue le cooldown
-cooldown--;
+if (obj_playerHead.image_blend == c_red) {
+	obj_playerHead.image_blend = c_white;
+}	
