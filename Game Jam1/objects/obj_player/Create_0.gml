@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 1EAC73A8
@@ -9,4 +10,9 @@ spd = 4;
 /// @DnDVersion : 1
 /// @DnDHash : 3543FBE2
 /// @DnDArgument : "var" "cooldown"
+=======
+///@description INIT VAR
+
+//cooldown du tir
+>>>>>>> master
 cooldown = 0;

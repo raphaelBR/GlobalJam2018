@@ -1,7 +1,7 @@
 {
     "id": "deda0159-b26e-408b-8319-cbe720bab98e",
     "modelName": "GMSprite",
-    "mvc": "1.1",
+    "mvc": "1.12",
     "name": "spr_titlescreen",
     "For3D": false,
     "HTile": false,
