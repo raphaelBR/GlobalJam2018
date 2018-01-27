@@ -9,3 +9,5 @@ can_move_ghost = true;
 //cooldown du tir
 cooldown = 0;
 
+//Nombre de point de vie
+life = 5
