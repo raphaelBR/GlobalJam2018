@@ -1,8 +1,8 @@
 {
-    "id": "9f3a94a3-cac2-41b9-839b-fde7612b3cfe",
+    "id": "a51fb59c-d06b-4e69-95c5-3f9a60682d29",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_barrelBullets",
+    "name": "obj_groundFire",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "2a72ed51-3ee3-40b8-9dc9-2e236bc5aa6e",
+    "spriteId": "937828b1-cc9c-4b40-a598-9c83b2523b6a",
     "visible": true
 }
