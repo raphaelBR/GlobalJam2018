@@ -47,6 +47,22 @@
             }
         },
         {
+            "Key": "03908a84-3d34-4e47-8cd2-73ae8df73259",
+            "Value": {
+                "id": "f1c63f1a-45ae-4e45-832f-91296a91497a",
+                "resourcePath": "objects\\obj_enemyspawn\\obj_enemyspawn.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "05042b9f-5ccb-489c-a3c6-98ce16c0a8f8",
+            "Value": {
+                "id": "b200a267-2c86-41a1-9224-db145a0cfdfb",
+                "resourcePath": "sprites\\spr_heart\\spr_heart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "056a665a-7a1b-4331-ab1b-e28eca9c9a07",
             "Value": {
                 "id": "61b338f6-170e-4fa1-bb6e-b1b9c66d5751",

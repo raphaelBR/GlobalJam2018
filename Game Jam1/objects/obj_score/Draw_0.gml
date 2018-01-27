@@ -14,7 +14,10 @@ draw_set_valign(fa_top);
 draw_set_colour($FFFFFFFF & $ffffff);
 draw_set_alpha(($FFFFFFFF >> 24) / $ff);
 
-draw_healthbar(10, 10, 110, 30, obj_player.extinction, c_black, c_yellow, c_green, 0, true, true);
+//affiche les coeurs / la vie
+for (i = 1; i <= obj_player.life; i++) {
+	draw_sprite(spr_heart,-1,cx-32+(i*64),16);
+}
 
 draw_text(cx + (cw/2), cy + 32, string("Score: ") + string(thescore));
-draw_text(cx + 925, cy + 32, string("Life: ") + string(obj_player.life));
+draw_text(cx + (cw/7), cy + 96, string("Ex. Bar: ") + string(obj_player.extinction));

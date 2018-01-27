@@ -24,3 +24,8 @@ extinctionCap = 30
 extinctionDrop = 50
 extinctionGain = 20
 
+//temps de recuperation apres avoir atteint le 0 avec extinction
+recuperation = false
+refill = false
+
+
