@@ -49,14 +49,10 @@ if (move_right == true) {
 	}
 }
 
-///// TIR //////////////////////////////////////////////////////
-
-
-
 //tir avec le clic gauche
 if (mouse_left) {
 	if(cooldown <= 0) {
-		instance_create_layer(x + 0, y + 0, "Layer_Bullet", obj_bullet);
+		instance_create_layer(x + 0, y + 0, "Layer_Bullet", obj_grenade);
 		cooldown = 5;
 	}
 }
