@@ -1,6 +1,20 @@
 ///@description PLAYER CHECKS
 
 
+//Plein Ecran f1, et f2 fenetre
+if keyboard_check(vk_f1) {
+	window_set_fullscreen(true)
+}
+
+if keyboard_check(vk_f2) {
+	window_set_fullscreen(false)
+}
+
+//restart room
+
+if keyboard_check(ord("R")) {
+room_restart()	
+}
 
 //variables
 mouse_left = mouse_check_button(mb_left);
