@@ -1,7 +1,7 @@
 direction = point_direction(x, y, mouse_x, mouse_y);
-
-image_angle = direction;
-
 speed = 10;
 
-comeback = false
+speedMax = 5
+slower = 1
+faster = 2
+reverse = false

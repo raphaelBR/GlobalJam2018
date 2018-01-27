@@ -3,9 +3,6 @@
 //vitesse de base de mouvement du joueur
 spd = 5;
 
-//variables pour bouger
-can_move_ghost = true;
-
 //cooldown du tir
 can_shoot = true;
 grenade_cd = 0.3
@@ -24,9 +21,5 @@ extinction = 100.0
 extinctionCap = 30
 extinctionDrop = 50
 extinctionGain = 20
-
-//temps de recuperation apres avoir atteint le 0 avec extinction
-recuperation = false
-refill = false
 
 
