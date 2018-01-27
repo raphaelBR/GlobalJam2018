@@ -1,0 +1,1 @@
+instance_create_layer(x, y, "Layer_Enemy", obj_explosion);

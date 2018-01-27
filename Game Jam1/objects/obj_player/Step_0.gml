@@ -66,11 +66,11 @@ if (mouse_left) {
 
 //Coup de melee
 if (mouse_right) {
-o_cone.damage = true
+obj_extinctionCone.damage = true
 }
 
 if !(mouse_right) {
-o_cone.damage = false
+obj_extinctionCone.damage = false
 }
 
 
