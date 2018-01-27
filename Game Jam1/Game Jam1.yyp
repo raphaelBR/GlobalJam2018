@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "15e88884-8ec9-44df-94db-999bb26fd8eb",
+            "Value": {
+                "id": "48957532-19e4-4724-b54b-bbc7e74ec16b",
+                "resourcePath": "sprites\\spr_barrel\\spr_barrel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "180ed096-6b4d-4d75-83e7-aff761978498",
             "Value": {
                 "id": "00b9e24d-9690-435c-a225-880a13a880c9",
@@ -311,11 +319,27 @@
             }
         },
         {
+            "Key": "750d7c6c-df20-4e0c-aebb-91de8e9e008e",
+            "Value": {
+                "id": "aaabcef6-15a9-4d15-918f-a2919bf424aa",
+                "resourcePath": "objects\\obj_grenade\\obj_grenade.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "779cf012-b4f4-4eb5-8797-b1ca2af51050",
             "Value": {
                 "id": "e2202878-d033-40a6-8b6d-75136e36a169",
                 "resourcePath": "views\\779cf012-b4f4-4eb5-8797-b1ca2af51050.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7f35e174-009c-40a4-b861-ed56f1dc0fc6",
+            "Value": {
+                "id": "455f77df-5140-4982-8726-e5632b4c9072",
+                "resourcePath": "sprites\\s_grenade\\s_grenade.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
