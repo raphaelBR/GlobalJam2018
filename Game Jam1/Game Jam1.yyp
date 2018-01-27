@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0ae6c224-f877-4a30-b90d-f6da164b461e",
+            "Value": {
+                "id": "a19c9eae-ffab-414b-9a6c-5a8a282d53cd",
+                "resourcePath": "objects\\o_enemy2\\o_enemy2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0c7e442b-95bf-4a59-ad7e-40779c1f1de3",
             "Value": {
                 "id": "d82726b2-26f3-4d49-917a-872e50fd1269",
@@ -132,6 +140,14 @@
                 "id": "90f8d426-0eed-4f86-b772-63ee2318ae63",
                 "resourcePath": "sprites\\spr_extinctionCone\\spr_extinctionCone.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "20a514ab-da01-430c-a6f2-d3db2811e84c",
+            "Value": {
+                "id": "addb9f9d-9a89-47bc-a515-189a59a41584",
+                "resourcePath": "objects\\o_enemy3\\o_enemy3.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -292,6 +308,14 @@
                 "id": "5539b757-8775-45a4-8cf5-755ff2d04980",
                 "resourcePath": "views\\64a43359-1861-4b22-936f-30d56c34b1d5.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6b2717c2-b1e7-4b91-a8ef-2a42cc86f591",
+            "Value": {
+                "id": "4c05469c-0832-47e3-aee3-3c8dff9146b4",
+                "resourcePath": "objects\\o_enemy\\o_enemy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -495,14 +519,6 @@
             }
         },
         {
-            "Key": "a88cbc8b-0a85-4637-b25a-592efd85eeff",
-            "Value": {
-                "id": "eee1916f-8bf7-4ecb-862e-b92323222cec",
-                "resourcePath": "objects\\obj_shield\\obj_shield.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "38cb9065-db2a-4cce-85b0-13f720448cdd",
@@ -612,6 +628,14 @@
                 "id": "fb9dd50c-97a9-4796-912f-c2c0b610bdf8",
                 "resourcePath": "sprites\\spr_darktile\\spr_darktile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d643fdd3-04f3-4c27-b067-eb01525b2ce3",
+            "Value": {
+                "id": "1a50ffcd-31ad-4055-8bd5-4f87456c0efd",
+                "resourcePath": "views\\d643fdd3-04f3-4c27-b067-eb01525b2ce3.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

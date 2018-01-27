@@ -1,6 +1,3 @@
-speedAttack = 5
-speedFlee = 5
-cooldown = 0
-can_shoot = true
-securityDistance = 50
-closeDistance = 300
+hp = 5;
+
+spd = 1.5;
