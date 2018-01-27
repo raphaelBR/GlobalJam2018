@@ -55,6 +55,7 @@ if (move_right == true) {
 	}
 }
 
+
 //tir avec le clic gauche
 if (mouse_left) {
 	if(cooldown <= 0) {
@@ -64,13 +65,25 @@ if (mouse_left) {
 }
 
 
-//Coup de melee
-if (mouse_right) {
+//Coup de melee (extinction)
+if extinction <= 0 {
+	recuperation = true
+	alarm_set(1,60)
+}
+
+if extinction >= 30 {
+	recuperation = false	
+}
+if (mouse_right) && extinction > 0 && recuperation = false{
 obj_extinctionCone.damage = true
+extinction = extinction - 0.5
 }
 
 if !(mouse_right) {
 obj_extinctionCone.damage = false
+	if extinction < 100 {
+	extinction = extinction + 0.5
+	}
 }
 
 

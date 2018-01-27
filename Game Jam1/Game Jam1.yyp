@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "815ab422-2139-4098-9bfb-73a1b08f9f9e",
+            "Value": {
+                "id": "cc02644a-c157-450b-a136-4989fe169bdf",
+                "resourcePath": "views\\815ab422-2139-4098-9bfb-73a1b08f9f9e.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "898b6c0c-7ed2-485e-b612-b6e55990bba3",
             "Value": {
                 "id": "22a1fa11-8850-4540-901e-7bfde90562f4",
@@ -531,6 +539,14 @@
             "Value": {
                 "id": "5003e1e0-5c58-4413-9d6b-99673fde80d5",
                 "resourcePath": "views\\db46dd77-d28f-40aa-986f-23884d7a4bb9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc6c426b-11f0-4ce9-9293-99298e6a2932",
+            "Value": {
+                "id": "72afb14b-a26b-49fe-ad41-32f344ea8685",
+                "resourcePath": "views\\dc6c426b-11f0-4ce9-9293-99298e6a2932.yy",
                 "resourceType": "GMFolder"
             }
         },
