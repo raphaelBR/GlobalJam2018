@@ -8,3 +8,7 @@ if (reverse = false) {
 	direction = point_direction(x, y, obj_player.x, obj_player.y)
 }
 image_angle = direction
+inst.x = x
+inst.y = y
+inst.direction = direction
+inst.image_angle = direction

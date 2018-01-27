@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "146b8775-aafb-46a7-a17c-fb12b729a0a6",
+            "Value": {
+                "id": "7afb78dc-5779-4d24-9f2b-b54f238ef034",
+                "resourcePath": "sprites\\spr_trailToxin\\spr_trailToxin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "15d4d779-1851-4187-8da1-44a8b32eb596",
             "Value": {
                 "id": "645e233c-b372-488d-92be-245a1fac056b",
@@ -292,6 +300,14 @@
                 "id": "e2202878-d033-40a6-8b6d-75136e36a169",
                 "resourcePath": "views\\779cf012-b4f4-4eb5-8797-b1ca2af51050.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "822c2ac1-6d63-44a6-99d4-cf6f4d68f0c5",
+            "Value": {
+                "id": "69472c26-0749-48ef-99da-ba7839b2651e",
+                "resourcePath": "objects\\obj_trailToxin\\obj_trailToxin.yy",
+                "resourceType": "GMObject"
             }
         },
         {
