@@ -65,22 +65,36 @@ if (mouse_left) {
 	}
 }
 
-
 //Coup de melee (extinction)
 
-if (mouse_right) && recuperation = false {
+if (mouse_right) && recuperation = false{
 obj_extinctionCone.damage = true
 extinction = extinction - 1
 }
 
+
+if !(mouse_right) && extinction < 100 {
+	obj_extinctionCone.damage = false
+	extinction = extinction + 1
+}
+
+
+if extinction >= 30 && recuperation = true {
+	recuperation = false
+	refill = false
+}
+
+
 if extinction <= 0 {
 	recuperation = true
+	obj_extinctionCone.damage = false
+	refill = true
 }
 
-if extinction >= 30 {
-	recuperation = false
+if (mouse_right) && refill = true {
+obj_extinctionCone.damage = false
+extinction = extinction + 1	
 }
-
 
 //diminue le cooldown
 cooldown--;

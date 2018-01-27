@@ -20,4 +20,6 @@ extinction = 100
 
 //temps de recuperation apres avoir atteint le 0 avec extinction
 recuperation = false
+refill = false
+
 
