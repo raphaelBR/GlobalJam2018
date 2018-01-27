@@ -1,5 +1,5 @@
 {
-    "id": "822c2ac1-6d63-44a6-99d4-cf6f4d68f0c5",
+    "id": "a9e84380-44c9-40b6-b49b-d25a75d330dc",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_trailToxin",
@@ -22,9 +22,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "146b8775-aafb-46a7-a17c-fb12b729a0a6",
     "visible": true
