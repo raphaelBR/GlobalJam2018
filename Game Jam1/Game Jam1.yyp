@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0f08bdcc-3ad9-4164-9dc5-9c10a65afa2a",
+            "Value": {
+                "id": "3b3272ff-40ad-4676-9535-dce398edf6a0",
+                "resourcePath": "sprites\\spr_background\\spr_background.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "112946f7-7e96-44bd-8d58-892bcb4d124a",
             "Value": {
                 "id": "89dc05b4-7ae4-4f98-a6b8-212517940f79",
@@ -196,6 +204,14 @@
                 "id": "b5d53339-5097-4253-842e-b72b3754a98f",
                 "resourcePath": "views\\2e1979ba-13d0-4c81-b982-367589fed360.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36a66e6a-57a5-4ae8-8f2b-89d252c12ca4",
+            "Value": {
+                "id": "f503b743-9911-4445-b66c-26bf2f8797a6",
+                "resourcePath": "sprites\\spr_shooter\\spr_shooter.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
