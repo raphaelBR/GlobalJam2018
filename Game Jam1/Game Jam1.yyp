@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "36a66e6a-57a5-4ae8-8f2b-89d252c12ca4",
+            "Value": {
+                "id": "f503b743-9911-4445-b66c-26bf2f8797a6",
+                "resourcePath": "sprites\\spr_shooter\\spr_shooter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3789aa81-d4aa-44cd-9926-ddb0256820f0",
             "Value": {
                 "id": "c997c672-f8b6-48f5-9cb6-c0e16f85a2ea",
