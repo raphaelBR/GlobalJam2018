@@ -311,6 +311,14 @@
             }
         },
         {
+            "Key": "5d2d6025-0a09-4519-9ecd-98c173c0b8b8",
+            "Value": {
+                "id": "e2d5ef7a-538b-4712-8cb4-62263322f9b8",
+                "resourcePath": "sprites\\spr_player_droit_haut\\spr_player_droit_haut.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5d71e72d-ce35-4b10-abd6-334bb0c2fa9d",
             "Value": {
                 "id": "3b343a5e-8582-4473-a368-839ea9a78798",
@@ -380,6 +388,14 @@
                 "id": "38438383-9fdc-40cb-b5b6-3320a65ec687",
                 "resourcePath": "sounds\\snd_saw\\snd_saw.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8f4fbb96-72e3-41c2-bc50-5e8a9e577a20",
+            "Value": {
+                "id": "7ac206c6-1f93-4563-aaed-d36a59d79b0e",
+                "resourcePath": "sprites\\spr_player_droit_bas\\spr_player_droit_bas.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -540,6 +556,14 @@
                 "id": "9ed47d9c-6335-4343-bc03-48022ee62194",
                 "resourcePath": "objects\\obj_title\\obj_title.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a9ed32a8-fef4-47bd-beb6-8b771a3289b7",
+            "Value": {
+                "id": "41577fed-80d7-4b48-aaa3-4023ec828a95",
+                "resourcePath": "sprites\\spr_player_droit_mid\\spr_player_droit_mid.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -764,6 +788,14 @@
                 "id": "f087e69e-7db5-4f81-b515-12c337e7cd95",
                 "resourcePath": "paths\\path0\\path0.yy",
                 "resourceType": "GMPath"
+            }
+        },
+        {
+            "Key": "fbbf2c7b-b5c3-4562-9d02-8df8519252aa",
+            "Value": {
+                "id": "2a400296-1f8a-4b6b-968e-89437de8cff9",
+                "resourcePath": "sprites\\spr_player_haut\\spr_player_haut.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
