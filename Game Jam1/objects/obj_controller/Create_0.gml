@@ -49,3 +49,8 @@ alarm_set(1, difficultDelay)
 
 global.tilingX = 32
 global.tilingY = 32
+
+//popup
+blink_timer = 0;
+wait_timer = 0;
+wait = true;

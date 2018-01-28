@@ -18,3 +18,6 @@ if (direction > 90 && direction < 270) {
 } else {
 	image_xscale = 1
 }
+
+//game over
+visible = obj_player.visible;

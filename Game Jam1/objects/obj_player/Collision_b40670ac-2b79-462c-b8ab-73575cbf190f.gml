@@ -1,7 +1,7 @@
 if (vulnerable == true && other.speed >= other.speedCap) {
 	life--
 	if (life = 0) {
-		room_restart()
+		visible = false;
 	} else {
 		vulnerable = false;
 		alarm_set(0, vulnerable_cd * room_speed)
