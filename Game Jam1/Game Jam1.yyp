@@ -2,7 +2,7 @@
     "id": "f44914d6-b4ec-49c8-8509-851981bd9f70",
     "modelName": "GMProject",
     "mvc": "1.0",
-    "IsDnDProject": true,
+    "IsDnDProject": false,
     "configs": [
         
     ],
@@ -212,14 +212,6 @@
                 "id": "9e4e4bc1-6e12-440f-9fd1-90c1f7a6f739",
                 "resourcePath": "tilesets\\Futuristic\\Futuristic.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "41e3a77e-b520-4928-b7ec-8e3f2f1168f9",
-            "Value": {
-                "id": "f10cad11-c34f-4f5e-85ec-124ea5bb45f4",
-                "resourcePath": "sprites\\spr_player1\\spr_player1.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

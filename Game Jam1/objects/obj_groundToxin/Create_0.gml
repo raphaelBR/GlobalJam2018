@@ -1,5 +1,5 @@
-spreadDelay = 30
-spreadDelayRandom = 10
+spreadDelay = 10
+spreadDelayRandom = 3
 tilingX = 62
 tilingY = 125
 scoring = 125

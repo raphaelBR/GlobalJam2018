@@ -1,4 +1,4 @@
-spreadDelay = 3
+spreadDelay = 7
 spreadDelayRandom = 1
 tilingX = 62
 tilingY = 125

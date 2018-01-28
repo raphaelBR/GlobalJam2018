@@ -6,7 +6,6 @@ if !audio_is_playing(snd_bg_healthy){
 	
 	audio_play_sound(snd_bg_healthy,0,true);
 }
-
 global.System = part_system_create()
 
 global.PartFire = part_type_create()

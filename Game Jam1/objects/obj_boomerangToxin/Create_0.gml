@@ -5,6 +5,7 @@ reverse = false
 
 speed = speedMax
 direction = point_direction(x, y, mouse_x, mouse_y);
+image_angle = direction
 
 //joue le son
 if !audio_is_playing(snd_saw){

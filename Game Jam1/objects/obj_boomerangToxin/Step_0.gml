@@ -8,4 +8,3 @@ if (reverse = false) {
 	speed = clamp(speed + faster / room_speed, 0, speedMax)
 	direction = point_direction(x, y, obj_player.x, obj_player.y)
 }
-image_angle = direction
