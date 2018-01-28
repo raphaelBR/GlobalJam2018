@@ -22,7 +22,13 @@ spawn_check = ((x_spawn - obj_player.x >= 100 || x_spawn - obj_player.x <= -100)
 meeting_check = !place_meeting(x_spawn,y_spawn,obj_barrelFire) && !place_meeting(x_spawn,y_spawn,obj_barrelToxin) && !place_meeting(x_spawn,y_spawn,obj_barrelBullets)
 
 if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
-	if spawn_check && meeting_check {
+	
+	barrelSpawn_timer++;
+	
+	if barrelSpawn_timer > 30 && spawn_check && meeting_check {
+		
+		barrelSpawn_timer = 0;
+		
 		switch (r) {
 		    case 0:
 				//rien - no spawn
