@@ -1,6 +1,6 @@
-//@description INIT VAR
+///@description INIT VAR
 
 image_alpha = 0;
 
 x = room_width/2;
-y = room_height/2;
+y = (room_height/3)+100;
