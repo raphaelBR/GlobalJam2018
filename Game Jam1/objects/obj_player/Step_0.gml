@@ -1,21 +1,3 @@
-//life loss - pour tester le game over screen
-/*if (vulnerable == true) {
-	life--
-	if (life = 0) {
-		//game over
-		instance_create_layer(x,y,"GameOver",obj_gameover)
-		//room_restart()
-	} else {
-		vulnerable = false;
-		alarm_set(0, vulnerable_cd * room_speed)
-		obj_playerHead.image_blend = c_red
-		obj_playerHead.image_alpha = 0.5
-		audio_play_sound(snd_hit, 10, false)
-		shit = true
-		alarm_set(2, shitDuration * room_speed)
-	}
-}*/
-
 //move var
 mouse_left = mouse_check_button(mb_left);
 mouse_right = mouse_check_button(mb_right);
@@ -73,12 +55,18 @@ if (move_right == true) {
 
 if (spacebar == true && can_extinct == true) {
 		obj_extinctionCone.active = true;
+		//jouer le son
+		if !audio_is_playing(snd_extinct) {
+			audio_play_sound(snd_extinct,0,false);
+		}
 		extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
 		if (extinction == 0) {
 			can_extinct = false;
 		}
 } else {
 	obj_extinctionCone.active = false;
+	//arrêter le son
+	audio_stop_sound(snd_extinct);
 	extinction = clamp(extinction + extinctionGain / room_speed, 0, 100);
 	if (can_shoot == true) {
 		if (mouse_left == true) {

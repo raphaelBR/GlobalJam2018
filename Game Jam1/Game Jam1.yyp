@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "03a9cd51-ced0-4e42-83e2-52f68ed69861",
+            "Value": {
+                "id": "a89ed1a9-799d-4ef6-90d5-9c095321441a",
+                "resourcePath": "sounds\\snd_extinct\\snd_extinct.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "05042b9f-5ccb-489c-a3c6-98ce16c0a8f8",
             "Value": {
                 "id": "b200a267-2c86-41a1-9224-db145a0cfdfb",
