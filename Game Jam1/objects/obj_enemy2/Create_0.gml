@@ -1,3 +1,4 @@
+fragments = 16
 speedAttack = 5
 speedFlee = 5
 cooldown = 0

@@ -14,8 +14,8 @@ nb_barrelBullets = instance_number(obj_barrelBullets);
 
 
 r = irandom_range(0,6);
-x_spawn = random_range(room_width/5,room_width-(room_width/5));
-y_spawn = random_range(room_height/5,room_height-(room_height/5));
+x_spawn = round(random_range(room_width/5,room_width-(room_width/5) / global.tilingY) * global.tilingY)
+y_spawn = round(random_range(room_height/5,room_height-(room_height/5) / global.tilingY) * global.tilingY)
 //vérifie qu'il est au moins à 100px du joueur
 spawn_check = ((x_spawn - obj_player.x >= 100 || x_spawn - obj_player.x <= -100) && (y_spawn - obj_player.y >= 100 || y_spawn - obj_player.y <= -100));
 //vérifie qu'il n'y a pas d'autres objets
