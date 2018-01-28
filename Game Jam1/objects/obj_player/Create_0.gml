@@ -14,5 +14,3 @@ extinction = 100
 extinctionCap = 30
 extinctionDrop = 30
 extinctionGain = 15
-
-

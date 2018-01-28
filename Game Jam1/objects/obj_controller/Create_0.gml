@@ -10,6 +10,7 @@ if !audio_is_playing(snd_bg_healthy){
 score = 0
 secondPerPoint = 0.05
 boost = false
+boost_timer = 0;
 
 alarm_set(0, secondPerPoint * room_speed)
 second_phase = true;

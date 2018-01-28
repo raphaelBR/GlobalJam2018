@@ -322,7 +322,7 @@
             "Key": "7dffb659-0be2-4781-8498-5bb0db617b40",
             "Value": {
                 "id": "7f053b9c-b1b8-4786-818b-a11b95d2949f",
-                "resourcePath": "fonts\\font0\\font0.yy",
+                "resourcePath": "fonts\\fnt_score\\fnt_score.yy",
                 "resourceType": "GMFont"
             }
         },
@@ -355,6 +355,14 @@
             "Value": {
                 "id": "6bd306ac-813c-4793-a14b-2d15db6ed0e7",
                 "resourcePath": "sounds\\snd_death\\snd_death.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "8e5a5bc1-12ba-4773-8b40-dc737e218edf",
+            "Value": {
+                "id": "38438383-9fdc-40cb-b5b6-3320a65ec687",
+                "resourcePath": "sounds\\snd_saw\\snd_saw.yy",
                 "resourceType": "GMSound"
             }
         },

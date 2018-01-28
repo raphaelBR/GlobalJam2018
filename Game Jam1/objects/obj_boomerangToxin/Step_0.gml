@@ -1,7 +1,7 @@
 if (reverse = false) {
 	speed = clamp(speed - slower / room_speed, 0, speedMax)
 	if (speed == 0) {
-		reverse = true	
+		reverse = true
 		instance_create_layer(x, y, "Tiles", obj_groundToxin)
 	}
 } else {
