@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "058e14b6-0d0a-4082-a9fc-f3e249a03af8",
-            "Value": {
-                "id": "a139f789-da24-43cc-9fc9-818d3c85ca6f",
-                "resourcePath": "datafiles_yy\\Migthy Ranger.yyp.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "08599390-7987-4a2b-b267-30c046a82417",
             "Value": {
                 "id": "06a469a4-d4d1-49ef-8b10-80d96ce7564a",
@@ -140,14 +132,6 @@
                 "id": "780d1961-2962-41a4-813b-062a19e29ed7",
                 "resourcePath": "sounds\\snd_explosion6\\snd_explosion6.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "15d4d779-1851-4187-8da1-44a8b32eb596",
-            "Value": {
-                "id": "645e233c-b372-488d-92be-245a1fac056b",
-                "resourcePath": "datafiles_yy\\TopDown.yyz.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
