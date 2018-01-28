@@ -1,4 +1,4 @@
-if (distance_to_object(obj_bulletEnemy) < protectionDistance || distance_to_object(obj_grenadeFire) < protectionDistance || distance_to_object(obj_billard) < protectionDistance) {
+if (distance_to_object(obj_bulletEnemy) < protectionDistance || distance_to_object(obj_grenadeFire) < protectionDistance) {
 	near = noone
 	if (instance_exists(obj_bulletEnemy) == true) {
 		if (near = noone) {
@@ -30,8 +30,11 @@ if (distance_to_object(obj_bulletEnemy) < protectionDistance || distance_to_obje
 	speed = speedWalk
 	inst.active = false
 }
-image_angle = direction
+if (direction > 270 || direction < 90) {
+	image_xscale = 1
+} else {
+	image_xscale = -1
+}
 inst.x = x
 inst.y = y
-inst.direction = direction
 inst.image_angle = image_angle

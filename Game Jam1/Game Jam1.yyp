@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "23ea1a89-317b-4461-9042-364762768445",
-            "Value": {
-                "id": "f3fa8eab-01c8-46e2-a835-61c371cf3442",
-                "resourcePath": "sprites\\spr_enemy3\\spr_enemy3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "24772f70-cb3f-4323-a76b-fe7b572ca628",
             "Value": {
                 "id": "a6eee4e7-1e13-4f42-ae0f-1e7f2ee5215c",
@@ -242,7 +234,7 @@
             "Key": "36a66e6a-57a5-4ae8-8f2b-89d252c12ca4",
             "Value": {
                 "id": "f503b743-9911-4445-b66c-26bf2f8797a6",
-                "resourcePath": "sprites\\spr_shooter\\spr_shooter.yy",
+                "resourcePath": "sprites\\spr_enemy3\\spr_enemy3.yy",
                 "resourceType": "GMSprite"
             }
         },

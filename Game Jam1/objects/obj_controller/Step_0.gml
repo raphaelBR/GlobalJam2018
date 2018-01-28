@@ -31,27 +31,27 @@ if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
 		        break;
 		    case 1:
 				//barrel toxin
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelToxin)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelToxin)
 		        break;
 		    case 2:
 				//barrel fire
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelFire)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelFire)
 		        break;
 		    case 3:
 				//barrel fire
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelFire)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelFire)
 				break;
 		    case 4:
 				//barrel bullets
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelBullets)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelBullets)
 		        break;
 		    case 5:
 				//barrel toxin
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelToxin)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelToxin)
 		        break;
 			case 6:
 				//barrel bullets
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelBullets)
+				instance_create_layer(x_spawn, y_spawn, "Barrels", obj_barrelBullets)
 		        break;
 			default:
 				break;
