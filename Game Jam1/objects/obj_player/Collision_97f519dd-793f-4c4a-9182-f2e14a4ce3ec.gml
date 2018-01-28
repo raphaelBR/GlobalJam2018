@@ -11,5 +11,5 @@ if (vulnerable == true) {
 		shit = true
 		alarm_set(2, shitDuration * room_speed)
 	}
-}
+}*/
 instance_destroy(other);
