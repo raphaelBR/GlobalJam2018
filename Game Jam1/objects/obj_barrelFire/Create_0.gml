@@ -1,4 +1,1 @@
-///@description INIT VAR
-
-//index du baril
-image_index = 0;
+scoring = 20

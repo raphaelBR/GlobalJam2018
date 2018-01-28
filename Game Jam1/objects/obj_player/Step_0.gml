@@ -1,34 +1,12 @@
-///@description PLAYER CHECKS
-
-
-//Plein Ecran f1, et f2 fenetre
-if keyboard_check(vk_f1) {
-	window_set_fullscreen(true)
-}
-
-if keyboard_check(vk_f2) {
-	window_set_fullscreen(false)
-}
-
-//restart room
-
-if keyboard_check(ord("R")) {
-room_restart()	
-}
-
-//variables
 mouse_left = mouse_check_button(mb_left);
 mouse_right = mouse_check_button(mb_right);
-mouse_right_released = mouse_check_button_released(mb_right);
 spacebar = keyboard_check(vk_space);
-//pour le mouvement
+
 move_up = keyboard_check(ord("W"));
 move_down = keyboard_check(ord("S"));
 move_left = keyboard_check(ord("A"));
 move_right = keyboard_check(ord("D"));
 tol = 1;
-
-///// MOUVEMENT /////////////////////////////////////
 
 if (move_up == true) {
 	for (var i = 0; i < spd; ++i) {
@@ -48,7 +26,6 @@ if (move_down == true) {
 		}	
 	}
 }
-
 if (move_left == true) {
 	for (var i = 0; i < spd; ++i) {
 	    if ((bbox_left > 0) && (collision_line(bbox_left - tol, bbox_top + tol, bbox_left - tol, bbox_bottom - tol, obj_wall, 0, true) == noone)) {
@@ -67,6 +44,7 @@ if (move_right == true) {
 		}	
 	}
 }
+
 if (spacebar == true && can_extinct == true) {
 		obj_extinctionCone.active = true;
 		extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
@@ -92,7 +70,6 @@ if (spacebar == true && can_extinct == true) {
 if (obj_playerHead.image_blend == c_red) {
 	obj_playerHead.image_blend = c_white
 }
-
 if (can_extinct == false && extinction >= extinctionCap) {
 	can_extinct = true
 }
