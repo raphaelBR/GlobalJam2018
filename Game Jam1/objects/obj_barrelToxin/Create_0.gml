@@ -1,2 +1,2 @@
 image_blend = c_lime;
-scoring = 20
+scoring = 350

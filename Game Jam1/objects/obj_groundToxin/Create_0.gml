@@ -2,6 +2,7 @@ spreadDelay = 30
 spreadDelayRandom = 10
 tilingX = 62
 tilingY = 125
+scoring = 125
 
 x = round(x / tilingX) * tilingX
 y = round(y / tilingY) * tilingY

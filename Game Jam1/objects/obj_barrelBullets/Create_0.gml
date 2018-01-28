@@ -1,2 +1,2 @@
 fragments = 9;
-scoring = 5
+scoring = 500

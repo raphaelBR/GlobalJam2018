@@ -2,10 +2,11 @@ if (boost == true) {
 	draw_set_colour(c_green);
 	boost = false
 }
+draw_set_font(font0)
 draw_set_alpha(1);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
-draw_text(display_get_width() / 2, 50, score)
+draw_text(display_get_width() / 2, 8, score)
 draw_set_colour(c_white)	
 
 draw_set_halign(fa_left);

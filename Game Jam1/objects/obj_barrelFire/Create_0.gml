@@ -1,1 +1,1 @@
-scoring = 20
+scoring = 400
