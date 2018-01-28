@@ -7,7 +7,7 @@ boomerang_cd = 0.75
 life = 5
 
 vulnerable = true
-vulnerable_cd = 2
+vulnerable_cd = 1.5
 
 can_extinct = true
 extinction = 100

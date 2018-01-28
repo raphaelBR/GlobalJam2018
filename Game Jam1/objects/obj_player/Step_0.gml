@@ -62,6 +62,7 @@ if (visible ==true) {
 			extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
 			if (extinction == 0) {
 				can_extinct = false;
+				audio_play_sound(snd_extinct_empty, 10, false)
 			}
 	} else {
 		obj_extinctionCone.active = false;
@@ -71,10 +72,12 @@ if (visible ==true) {
 		if (can_shoot == true) {
 			if (mouse_left == true) {
 				instance_create_layer(x, y, "Bullets", obj_grenadeFire);
+				audio_play_sound(snd_shoot_grenade, 10, false)
 				can_shoot = false;
 				alarm_set(1, grenade_cd * room_speed)
 			} else if (mouse_right == true) {
 				instance_create_layer(x, y, "Bullets", obj_boomerangToxin);
+				audio_play_sound(snd_shoot_boomering, 10, false)
 				can_shoot = false;
 				alarm_set(1, boomerang_cd * room_speed)
 			}

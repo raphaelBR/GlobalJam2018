@@ -1,4 +1,5 @@
-
+count = instance_number(obj_groundFire) + instance_number(obj_groundToxin)
+audio_sound_gain(snd_fire, count / 250, 0.1 * room_speed);
 
 nb_barrelFire = instance_number(obj_barrelFire);
 nb_barrelToxin = instance_number(obj_barrelToxin);
@@ -59,10 +60,12 @@ if (obj_player.visible = false) {
 		audio_stop_all();
 		audio_play_sound(snd_gameover,10,true)
 	}
-	if (keyboard_check_pressed (vk_space) or mouse_check_button_pressed(mb_left)) {
-		room_restart()	
+	if (wait = false) {
+		if (keyboard_check_pressed (vk_space) or mouse_check_button_pressed(mb_left)) {
+			room_restart()	
+		}
+		if (keyboard_check_pressed (vk_escape)) {
+			game_restart()	
+		}	
 	}
-	if (keyboard_check_pressed (vk_escape)) {
-		game_restart()	
-	}	
 }

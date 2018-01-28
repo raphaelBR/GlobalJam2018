@@ -49,3 +49,4 @@ if (!audio_is_playing(snd_bg)) {
 	audio_stop_all();
 	audio_play_sound(snd_bg,10,true);
 }
+audio_play_sound(snd_fire, 5, true)

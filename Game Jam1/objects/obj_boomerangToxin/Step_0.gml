@@ -8,3 +8,6 @@ if (reverse = false) {
 	speed = clamp(speed + faster / room_speed, 0, speedMax)
 	direction = point_direction(x, y, obj_player.x, obj_player.y)
 }
+if (reverse = true) {
+	image_blend = c_ltgray
+}

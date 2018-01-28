@@ -33,7 +33,7 @@ if obj_player.visible = true {
 		wait_timer++;
 	}
 
-	if wait_timer > 90 {
+	if wait_timer > 45 {
 		wait = false;
 		blink_timer++;
 	}
