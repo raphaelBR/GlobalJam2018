@@ -1,41 +1,32 @@
 {
-    "id": "0ae6c224-f877-4a30-b90d-f6da164b461e",
+    "id": "a88cbc8b-0a85-4637-b25a-592efd85eeff",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_enemy2",
+    "name": "obj_shield",
     "eventList": [
         {
-            "id": "3a76fda7-280e-4c3f-9b73-175db8dc04b7",
+            "id": "9c364333-62fd-4e49-8831-fc4dd868b63f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "0ae6c224-f877-4a30-b90d-f6da164b461e"
+            "m_owner": "a88cbc8b-0a85-4637-b25a-592efd85eeff"
         },
         {
-            "id": "d0600aa1-7fc7-403a-ab1a-2941d5ead61d",
+            "id": "421b5e78-a68f-4d20-b019-b6b39b1b2bb1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "0ae6c224-f877-4a30-b90d-f6da164b461e"
-        },
-        {
-            "id": "dc67f7f2-d73a-4769-be6d-54fcfe8ad777",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "4e942f8f-f56a-4b6b-9bfb-a5322e620003",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "0ae6c224-f877-4a30-b90d-f6da164b461e"
+            "m_owner": "a88cbc8b-0a85-4637-b25a-592efd85eeff"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -50,7 +41,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
+    "properties": null,
     "solid": false,
-    "spriteId": "6d63d2ee-b508-4b64-9ae0-01f7875a3eca",
+    "spriteId": "f9351499-636b-41b2-8dfc-06c44c76e674",
     "visible": true
 }

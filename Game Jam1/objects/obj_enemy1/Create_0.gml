@@ -1,3 +1,3 @@
-hp = 5;
-
-spd = 1.5;
+speed = 5
+explosion_delay = 1
+suicideProximity = 5
