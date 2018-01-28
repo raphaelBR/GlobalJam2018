@@ -16,7 +16,8 @@
         "0c7a1d65-154b-4c82-b5bd-fe8d8be4c905",
         "c1fd6b19-ccb1-4ab5-8bd6-e6183cdbe687",
         "5d71e72d-ce35-4b10-abd6-334bb0c2fa9d",
-        "4c9c9e67-2bf7-4b41-bd23-468240c0fcbb"
+        "4c9c9e67-2bf7-4b41-bd23-468240c0fcbb",
+        "5bded2f6-ee15-411b-a904-6baf1eaedab2"
     ],
     "filterType": "GMSprite",
     "folderName": "Baddies",

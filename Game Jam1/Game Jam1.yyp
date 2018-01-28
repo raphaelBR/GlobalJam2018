@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "5bded2f6-ee15-411b-a904-6baf1eaedab2",
+            "Value": {
+                "id": "4ef1895e-fcf2-4c10-b72c-7cb82edece8a",
+                "resourcePath": "sprites\\spr_explosionToxin\\spr_explosionToxin.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5c226e44-bc53-4d54-943a-9880c95066bb",
             "Value": {
                 "id": "7461f36d-8716-4fac-addb-9d7b41db0da2",
