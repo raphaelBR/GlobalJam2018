@@ -54,35 +54,44 @@ if (visible ==true) {
 		}
 	}
 
-if (spacebar == true && can_extinct == true) {
-		obj_extinctionCone.active = true;
-		//jouer le son
-		if !audio_is_playing(snd_extinct) {
-			audio_play_sound(snd_extinct,0,false);
+	if (spacebar == true && can_extinct == true) {
+			obj_extinctionCone.active = true;
+			//jouer le son
+			if !audio_is_playing(snd_extinct) {
+				audio_play_sound(snd_extinct,0,false);
+			}
+			extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
+			if (extinction == 0) {
+				can_extinct = false;
+			}
+	} else {
+		obj_extinctionCone.active = false;
+		//arrêter le son
+		audio_stop_sound(snd_extinct);
+		extinction = clamp(extinction + extinctionGain / room_speed, 0, 100);
+		if (can_shoot == true) {
+			if (mouse_left == true) {
+				instance_create_layer(x, y, "Bullets", obj_grenadeFire);
+				can_shoot = false;
+				alarm_set(1, grenade_cd * room_speed)
+			} else if (mouse_right == true) {
+				instance_create_layer(x, y, "Bullets", obj_boomerangToxin);
+				can_shoot = false;
+				alarm_set(1, boomerang_cd * room_speed)
+			}
 		}
-		extinction = clamp(extinction - extinctionDrop / room_speed, 0, 100);
-		if (extinction == 0) {
-			can_extinct = false;
-		}
-} else {
-	obj_extinctionCone.active = false;
-	//arrêter le son
-	audio_stop_sound(snd_extinct);
-	extinction = clamp(extinction + extinctionGain / room_speed, 0, 100);
-	if (can_shoot == true) {
-		if (mouse_left == true) {
-			instance_create_layer(x, y, "Bullets", obj_grenadeFire);
-			can_shoot = false;
-			alarm_set(1, grenade_cd * room_speed)
-		} else if (mouse_right == true) {
-			instance_create_layer(x, y, "Bullets", obj_boomerangToxin);
-			can_shoot = false;
-			alarm_set(1, boomerang_cd * room_speed)
-		}
-	}
 
-	if (obj_playerHead.image_blend == c_red) {
-		obj_playerHead.image_blend = c_white
+		if (obj_playerHead.image_blend == c_red) {
+			obj_playerHead.image_blend = c_white
+		}
+		if (can_extinct == false && extinction >= extinctionCap) {
+			can_extinct = true
+		}
+
+		if (shit == true) {
+			view_xport[0] = random_range(-shitIntensity, shitIntensity)
+			view_yport[0] = random_range(-shitIntensity, shitIntensity)
+		}
 	}
 	if (can_extinct == false && extinction >= extinctionCap) {
 		can_extinct = true

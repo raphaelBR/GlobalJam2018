@@ -17,4 +17,4 @@ extinctionGain = 15
 
 shit = false
 shitIntensity = 10
-shitDuration = 0.4
+shitDuration = 0.3

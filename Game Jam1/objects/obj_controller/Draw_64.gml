@@ -52,6 +52,4 @@ if obj_player.visible = true {
 	draw_text(848, 708, global.finalScore)
 	draw_set_color(c_red)
 	draw_text(850, 710, global.finalScore)
-	
-	
 }

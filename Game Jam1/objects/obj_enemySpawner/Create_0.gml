@@ -1,6 +1,6 @@
 spawn_cd = 5
 spawn_cd_random = 2
-safety_distance = 75
+safety_distance = 175
 rotationSpeed = 500
 speedRandomness = 400
 path_start(path0, rotationSpeed + random_range(-speedRandomness, speedRandomness), path_action_restart, true)
