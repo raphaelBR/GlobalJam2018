@@ -1,5 +1,5 @@
-spreadDelay = 3
-spreadDelayRandom = 3
+spreadDelay = 2
+spreadDelayRandom = 2
 scoring = 100
 
 x = round(x / global.tilingX) * global.tilingX

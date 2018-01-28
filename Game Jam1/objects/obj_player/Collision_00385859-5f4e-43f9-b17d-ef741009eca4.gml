@@ -2,6 +2,7 @@ if (vulnerable == true) {
 	life--
 	if (life = 0) {
 		visible = false;
+		global.finalScore = score;
 	} else {
 		vulnerable = false;
 		alarm_set(0, vulnerable_cd * room_speed)

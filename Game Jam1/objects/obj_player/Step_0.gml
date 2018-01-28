@@ -7,51 +7,52 @@ move_up = keyboard_check(ord("W"));
 move_down = keyboard_check(ord("S"));
 move_left = keyboard_check(ord("A"));
 move_right = keyboard_check(ord("D"));
-tol = 1;
+if (visible ==true) {
+	tol = 1;
 
-if (move_up || move_down || move_left || move_right) {
-	obj_playerHead.image_speed = 1
-} else {
-	obj_playerHead.image_speed = 0
-	obj_playerHead.image_index = 0
-}
+	if (move_up || move_down || move_left || move_right) {
+		obj_playerHead.image_speed = 1
+	} else {
+		obj_playerHead.image_speed = 0
+		obj_playerHead.image_index = 0
+	}
 
-if (move_up == true) {
-	for (var i = 0; i < spd; ++i) {
-	    if ((bbox_top > 0) && (collision_line(bbox_left + tol, bbox_top - tol, bbox_right - tol, bbox_top - tol, obj_wall, 0, true) == noone)) {
-			y--;
-		} else {
-			break;
-		}	
+	if (move_up == true) {
+		for (var i = 0; i < spd; ++i) {
+		    if ((bbox_top > 0) && (collision_line(bbox_left + tol, bbox_top - tol, bbox_right - tol, bbox_top - tol, obj_wall, 0, true) == noone)) {
+				y--;
+			} else {
+				break;
+			}	
+		}
 	}
-}
-if (move_down == true) {
-	for (var i = 0; i < spd; ++i) {
-	    if ((bbox_bottom < room_height) && (collision_line(bbox_left + tol, bbox_bottom + tol, bbox_right - tol, bbox_bottom + tol, obj_wall, 0, true) == noone)) {
-			y++;
-		} else {
-			break;
-		}	
+	if (move_down == true) {
+		for (var i = 0; i < spd; ++i) {
+		    if ((bbox_bottom < room_height) && (collision_line(bbox_left + tol, bbox_bottom + tol, bbox_right - tol, bbox_bottom + tol, obj_wall, 0, true) == noone)) {
+				y++;
+			} else {
+				break;
+			}	
+		}
 	}
-}
-if (move_left == true) {
-	for (var i = 0; i < spd; ++i) {
-	    if ((bbox_left > 0) && (collision_line(bbox_left - tol, bbox_top + tol, bbox_left - tol, bbox_bottom - tol, obj_wall, 0, true) == noone)) {
-			x--;
-		} else {
-			break;
-		}	
+	if (move_left == true) {
+		for (var i = 0; i < spd; ++i) {
+		    if ((bbox_left > 0) && (collision_line(bbox_left - tol, bbox_top + tol, bbox_left - tol, bbox_bottom - tol, obj_wall, 0, true) == noone)) {
+				x--;
+			} else {
+				break;
+			}	
+		}
 	}
-}
-if (move_right == true) {
-	for (var i = 0; i < spd; ++i) {
-	    if ((bbox_right < room_width) && (collision_line(bbox_right + tol, bbox_top + tol, bbox_right + tol, bbox_bottom - tol, obj_wall, 0, true) == noone)) {
-			x++;
-		} else {
-			break;
-		}	
+	if (move_right == true) {
+		for (var i = 0; i < spd; ++i) {
+		    if ((bbox_right < room_width) && (collision_line(bbox_right + tol, bbox_top + tol, bbox_right + tol, bbox_bottom - tol, obj_wall, 0, true) == noone)) {
+				x++;
+			} else {
+				break;
+			}	
+		}
 	}
-}
 
 if (spacebar == true && can_extinct == true) {
 		obj_extinctionCone.active = true;
@@ -79,16 +80,20 @@ if (spacebar == true && can_extinct == true) {
 			alarm_set(1, boomerang_cd * room_speed)
 		}
 	}
-}
 
-if (obj_playerHead.image_blend == c_red) {
-	obj_playerHead.image_blend = c_white
-}
-if (can_extinct == false && extinction >= extinctionCap) {
-	can_extinct = true
-}
+	if (obj_playerHead.image_blend == c_red) {
+		obj_playerHead.image_blend = c_white
+	}
+	if (can_extinct == false && extinction >= extinctionCap) {
+		can_extinct = true
+	}
 
-if (shit == true) {
-	view_xport[0] = random_range(-shitIntensity, shitIntensity)
-	view_yport[0] = random_range(-shitIntensity, shitIntensity)
+	if (shit == true) {
+		view_xport[0] = random_range(-shitIntensity, shitIntensity)
+		view_yport[0] = random_range(-shitIntensity, shitIntensity)
+	}
+} else {
+	if (spacebar or mouse_left) {
+	room_restart()	
+	}
 }
