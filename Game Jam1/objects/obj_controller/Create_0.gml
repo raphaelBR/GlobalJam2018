@@ -8,3 +8,5 @@ if !audio_is_playing(snd_bg_healthy){
 }
 
 second_phase = true;
+
+barrelSpawn_timer = 0;
