@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "08599390-7987-4a2b-b267-30c046a82417",
+            "Value": {
+                "id": "06a469a4-d4d1-49ef-8b10-80d96ce7564a",
+                "resourcePath": "sounds\\snd_shoot_boomering\\snd_shoot_boomering.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "0c7a1d65-154b-4c82-b5bd-fe8d8be4c905",
             "Value": {
                 "id": "5f97e557-7279-4e88-9798-0f2a6c2b686f",
@@ -852,6 +860,14 @@
                 "id": "91aa856b-136f-480f-9fb6-15dc0bbe6876",
                 "resourcePath": "views\\e808ec9e-6f7d-4b79-95df-09b785b870d3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eeb68cc6-e05c-471c-8a35-1aa7307874ef",
+            "Value": {
+                "id": "2f9022c9-1de4-49ca-944d-25b2864c7a42",
+                "resourcePath": "sounds\\snd_shoot_grenade\\snd_shoot_grenade.yy",
+                "resourceType": "GMSound"
             }
         },
         {
