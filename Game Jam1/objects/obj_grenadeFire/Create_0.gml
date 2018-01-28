@@ -1,8 +1,8 @@
 exploding = true
-explosion_delay = 2
+explosion_delay = 1.5
 prevention_delay = 0.5
-speedLoss = 1
-speedMax = 10
+speedLoss = 7
+speedMax = 15
 
 direction = obj_playerHead.direction
 speed = speedMax

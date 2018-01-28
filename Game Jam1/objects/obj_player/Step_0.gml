@@ -8,6 +8,13 @@ move_left = keyboard_check(ord("A"));
 move_right = keyboard_check(ord("D"));
 tol = 1;
 
+if (move_up || move_down || move_left || move_right) {
+	obj_playerHead.image_speed = 1
+} else {
+	obj_playerHead.image_speed = 0
+	obj_playerHead.image_index = 0
+}
+
 if (move_up == true) {
 	for (var i = 0; i < spd; ++i) {
 	    if ((bbox_top > 0) && (collision_line(bbox_left + tol, bbox_top - tol, bbox_right - tol, bbox_top - tol, obj_wall, 0, true) == noone)) {
@@ -72,4 +79,9 @@ if (obj_playerHead.image_blend == c_red) {
 }
 if (can_extinct == false && extinction >= extinctionCap) {
 	can_extinct = true
+}
+
+if (shit == true) {
+	view_xport[0] = random_range(-shitIntensity, shitIntensity)
+	view_yport[0] = random_range(-shitIntensity, shitIntensity)
 }

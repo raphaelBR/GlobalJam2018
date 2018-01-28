@@ -17,7 +17,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 for (i = 1; i <= obj_player.life; i++) {
-	draw_sprite(spr_heart, 15, (i * 64) - 32, 16);
+	draw_sprite(spr_heart, image_index, (i * 64) - 32, 16);
 }
 
 if (obj_player.can_extinct == true) {

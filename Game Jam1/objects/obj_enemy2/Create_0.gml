@@ -1,8 +1,8 @@
-fragments = 16
+fragments = 8
 speedAttack = 5
-speedFlee = 5
-cooldown = 0
+speedFlee = 3.5
+cooldown = 1.5
 can_shoot = true
-securityDistance = 50
+securityDistance = 75
 closeDistance = 300
 scoring = 275

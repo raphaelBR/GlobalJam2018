@@ -1,4 +1,4 @@
-spawn_cd = 3;
+spawn_cd = 5
 spawn_cd_random = 2
 rotationSpeed = 500
 speedRandomness = 400

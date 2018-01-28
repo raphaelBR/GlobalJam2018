@@ -1,7 +1,6 @@
 if (vulnerable == true && other.speed >= other.speedCap) {
 	life--
 	if (life = 0) {
-		audio_play_sound(snd_death, 10, false)
 		room_restart()
 	} else {
 		vulnerable = false;
@@ -9,5 +8,7 @@ if (vulnerable == true && other.speed >= other.speedCap) {
 		obj_playerHead.image_blend = c_red
 		obj_playerHead.image_alpha = 0.5
 		audio_play_sound(snd_hit, 10, false)
+		shit = true
+		alarm_set(2, shitDuration * room_speed)
 	}
 }

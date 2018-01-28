@@ -1,6 +1,6 @@
-speedCap = 1
-speedLoss = 1
-speedGain = 5
+speedCap = 3
+speedLoss = 4
+speedGain = 3
 bulletMultiplier = 30
-speedMax = 5
+speedMax = 10
 spinRatio = 1

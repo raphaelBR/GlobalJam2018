@@ -1,21 +1,17 @@
-///@description MUSIC/SPAWNER
-
-//changement de musique à deux de vies
 if (obj_player.life <= 2 && second_phase) {
 	audio_stop_sound(snd_bg_healthy);
 	audio_play_sound(snd_bg_neardeath,0,true);
 	second_phase = false;
 }
 
-//spawner de barils
 nb_barrelFire = instance_number(obj_barrelFire);
 nb_barrelToxin = instance_number(obj_barrelToxin);
 nb_barrelBullets = instance_number(obj_barrelBullets);
 
 
 r = irandom_range(0,6);
-x_spawn = round(random_range(room_width/5,room_width-(room_width/5) / global.tilingY) * global.tilingY)
-y_spawn = round(random_range(room_height/5,room_height-(room_height/5) / global.tilingY) * global.tilingY)
+x_spawn = round(random_range(room_width/5,room_width-(room_width/5)) / global.tilingY) * global.tilingY
+y_spawn = round(random_range(room_height/5,room_height-(room_height/5)) / global.tilingY) * global.tilingY
 //vérifie qu'il est au moins à 100px du joueur
 spawn_check = ((x_spawn - obj_player.x >= 100 || x_spawn - obj_player.x <= -100) && (y_spawn - obj_player.y >= 100 || y_spawn - obj_player.y <= -100));
 //vérifie qu'il n'y a pas d'autres objets
@@ -25,7 +21,7 @@ if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
 	
 	barrelSpawn_timer++;
 	
-	if barrelSpawn_timer > 30 && spawn_check && meeting_check {
+	if barrelSpawn_timer > barrelDelay * room_speed && spawn_check && meeting_check {
 		
 		barrelSpawn_timer = 0;
 		
@@ -34,7 +30,8 @@ if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
 				//rien - no spawn
 		        break;
 		    case 1:
-				//rien - no spawn
+				//barrel toxin
+				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelToxin)
 		        break;
 		    case 2:
 				//barrel fire
@@ -45,8 +42,8 @@ if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
 				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelFire)
 				break;
 		    case 4:
-				//barrel toxin
-				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelToxin)
+				//barrel bullets
+				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelBullets)
 		        break;
 		    case 5:
 				//barrel toxin
@@ -56,6 +53,8 @@ if nb_barrelFire + nb_barrelToxin + nb_barrelBullets < 3{
 				//barrel bullets
 				instance_create_layer(x_spawn, y_spawn, "Instances", obj_barrelBullets)
 		        break;
+			default:
+				break;
 		}
 	}
 }
