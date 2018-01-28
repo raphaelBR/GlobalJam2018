@@ -1,3 +1,9 @@
-///@description INIT VAR
+spreadDelay = 3
+spreadDelayRandom = 1
+tilingX = 62
+tilingY = 125
 
-spread_timer = 0;
+x = round(x / tilingX) * tilingX
+y = round(y / tilingY) * tilingY
+
+alarm_set(0, (spreadDelay + random_range(0, spreadDelayRandom)) * room_speed)

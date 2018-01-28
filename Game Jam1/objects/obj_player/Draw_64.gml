@@ -7,7 +7,7 @@ draw_set_alpha(($FFFFFFFF >> 24) / $ff);
 
 //affiche les coeurs / la vie
 for (i = 1; i <= life; i++) {
-	draw_sprite(spr_heart,15,32+(i*64),16);
+	draw_sprite(spr_heart,15,(i*64)-32,16);
 }
 
 if (can_extinct == true) {
