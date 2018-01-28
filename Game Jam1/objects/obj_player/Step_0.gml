@@ -94,6 +94,6 @@ if (spacebar == true && can_extinct == true) {
 	}
 } else {
 	if (spacebar or mouse_left) {
-	room_restart()	
+		room_restart()
 	}
 }

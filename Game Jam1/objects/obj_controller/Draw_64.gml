@@ -27,8 +27,6 @@ if obj_player.visible = true {
 		draw_healthbar(32, 96, 352, 128, obj_player.extinction, c_black, c_red, c_red, 0, true, true)
 	}
 } else {
-	draw_set_halign(fa_center);
-	draw_set_valign(fa_middle);
 	draw_sprite(spr_gameover, 0, room_width/2, room_height/2);
 	
 	if wait {

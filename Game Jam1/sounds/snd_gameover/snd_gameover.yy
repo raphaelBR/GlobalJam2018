@@ -1,8 +1,8 @@
 {
-    "id": "991a1891-66b7-4bb9-85d6-1ca5fd3dff24",
+    "id": "a1f001f4-3dc0-47a7-955b-d8b02a19e2b1",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_bg_neardeath",
+    "name": "snd_gameover",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

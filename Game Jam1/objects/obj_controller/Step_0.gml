@@ -1,5 +1,12 @@
+if !obj_player.visible && !audio_is_playing(snd_gameover){
+	// GAME OVER
+	audio_stop_all();
+	audio_play_sound(snd_gameover,0,true);
+}
+
 if (obj_player.life <= 2 && second_phase) {
-	audio_stop_sound(snd_bg_healthy);
+	audio_stop_sound(snd_bg);
+	audio_fa
 	audio_play_sound(snd_bg_neardeath,0,true);
 	second_phase = false;
 }
