@@ -30,7 +30,6 @@ boost = false
 boost_timer = 0;
 
 alarm_set(0, secondPerPoint * room_speed)
-second_phase = true;
 
 barrelDelay = 3
 barrelSpawn_timer = 0;
@@ -45,3 +44,8 @@ global.tilingY = 32
 blink_timer = 0;
 wait_timer = 0;
 wait = true;
+
+if (!audio_is_playing(snd_bg)) {
+	audio_stop_all();
+	audio_play_sound(snd_bg,10,true);
+}

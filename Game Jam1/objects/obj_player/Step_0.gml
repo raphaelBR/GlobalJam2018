@@ -1,13 +1,12 @@
-//move var
-mouse_left = mouse_check_button(mb_left);
-mouse_right = mouse_check_button(mb_right);
-spacebar = keyboard_check(vk_space);
-
-move_up = keyboard_check(ord("W"));
-move_down = keyboard_check(ord("S"));
-move_left = keyboard_check(ord("A"));
-move_right = keyboard_check(ord("D"));
 if (visible ==true) {
+	mouse_left = mouse_check_button(mb_left);
+	mouse_right = mouse_check_button(mb_right);
+	spacebar = keyboard_check(vk_space);
+
+	move_up = keyboard_check(ord("W"));
+	move_down = keyboard_check(ord("S"));
+	move_left = keyboard_check(ord("A"));
+	move_right = keyboard_check(ord("D"));
 	tol = 1;
 
 	if (move_up || move_down || move_left || move_right) {
@@ -102,7 +101,5 @@ if (visible ==true) {
 		view_yport[0] = random_range(-shitIntensity, shitIntensity)
 	}
 } else {
-	if (spacebar or mouse_left) {
-		room_restart()
-	}
+	vulnerable = false
 }

@@ -1,15 +1,4 @@
-if !obj_player.visible && !audio_is_playing(snd_gameover){
-	// GAME OVER
-	audio_stop_all();
-	audio_play_sound(snd_gameover,0,true);
-}
 
-if (obj_player.life <= 2 && second_phase) {
-	audio_stop_sound(snd_bg);
-	audio_fa
-	audio_play_sound(snd_bg_neardeath,0,true);
-	second_phase = false;
-}
 
 nb_barrelFire = instance_number(obj_barrelFire);
 nb_barrelToxin = instance_number(obj_barrelToxin);
@@ -66,6 +55,10 @@ if keyboard_check_pressed (vk_f2) {
 }
 
 if (obj_player.visible = false) {
+	if !audio_is_playing(snd_gameover){
+		audio_stop_all();
+		audio_play_sound(snd_gameover,10,true)
+	}
 	if (keyboard_check_pressed (vk_space) or mouse_check_button_pressed(mb_left)) {
 		room_restart()	
 	}
